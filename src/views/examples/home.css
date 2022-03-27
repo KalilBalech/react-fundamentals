@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home{
+    display: flex;
+    
+}
+
+#left-logo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+    margin-top: 60px;
+}
+
+img{
+    height: 150px;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.right-login{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(185, 185, 185);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 27vw;
+    margin: 10vh 15vw 20px 20px;
+}
+
+.card :nth-child(1n){
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 15px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    width: fit-content;
+    align-self: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.login-button{
+    background-color: #1877f2;
+    width: 100%;
+}
+
+a{
+    font-size: 12px;
+    text-decoration: none;
+    align-self: center;
+    margin: 5px;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+hr{
+    margin:10px
+}
+
+p{
+    font-size: 13px;
+    margin-left: 5vw;
+}
