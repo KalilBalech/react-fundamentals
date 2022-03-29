@@ -7,7 +7,7 @@ const Menu = props => {
         <div className="menu">
             <ul>
                 <li>
-                    <Link to="/home" >Home</Link>
+                    <Link to="/" >Home</Link> {/*esse link estaá vinculado com o path / */}
                 </li>
                 <li>
                     <Link to="/about">About</Link>

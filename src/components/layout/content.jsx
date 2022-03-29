@@ -8,7 +8,7 @@ const content = (props) => {
     return (
         <main className="content">
             <Routes>
-                <Route path="/home" element={<Home/>}/>
+                <Route path="/" element={<Home/>}/> {/*essa rota liga a pagina home com o path /*/}
                 <Route path="/about" element={<About/>}/>
             </Routes>
         </main>

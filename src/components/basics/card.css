@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(185, 185, 185);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 27vw;
+    margin: 10vh 15vw 20px 20px;
+}
+
+.card :nth-child(1n){
+    margin-bottom: 10px;
+}

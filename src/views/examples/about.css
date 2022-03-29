@@ -8,3 +8,30 @@
 h1{
     margin-bottom: 20px;
 }
+
+#vid{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+video{
+    display: inline;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 0;
+    height: 80vh;
+    left: 130px;
+}
+
+.caption{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 170px;
+}
+
+.caption{
+    color: white;
+}
