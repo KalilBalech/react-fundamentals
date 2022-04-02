@@ -5,6 +5,28 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.all-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    margin-top: 15vh;
+    display: flex;
+    width: 100%;
+    padding: 0 20vw;
+}
+
+.buttons > *{
+    margin-right: 10vw;
+}
+
+.buttons :last-child{
+    margin-right: 0;
+}
+
+
 .home{
     display: flex;
     
@@ -18,14 +40,14 @@
 }
 
 img{
-    height: 150px;
-    width: 300px;
+    /* height: 150px; */
+    width: 20vw;
     margin-bottom: 0;
 }
 
 h2{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
     display: inline-block;
 }
@@ -69,6 +91,6 @@ hr{
 }
 
 p{
-    font-size: 13px;
+    font-size: 1vw;
     margin-left: 5vw;
 }

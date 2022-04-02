@@ -3,6 +3,6 @@ import "./button.css"
 
 export default function button(props){
     return(
-        <button style={{backgroundColor: props.color, width: props.width}}>{props.title}</button>
+        <button onClick={props.onClick} style={{backgroundColor: props.color, width: props.width}}>{props.title}</button>
     )
 }

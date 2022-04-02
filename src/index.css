@@ -1,0 +1,8 @@
+:root{
+    --mainColor: blue;
+
+}
+
+body{
+    background-color: var(--mainColor);
+}
