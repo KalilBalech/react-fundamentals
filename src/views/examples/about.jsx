@@ -1,6 +1,5 @@
 import react from "react";
 import "./about.css"
-import Button from "../../components/basics/button"
 
 const about = (props) => {
     return (
