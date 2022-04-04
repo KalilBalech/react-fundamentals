@@ -10,6 +10,8 @@ const UseStatehome = (props) => {
     const [color, setColor] = useState("#1877f2")
     const [socialMedia, setSocialMedia] = useState("Facebook")
     const [logo, setLogo] = useState("https://www.aludesign.pl/wp-content/uploads/2021/07/Facebook-Logo.png")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
     
     useEffect(function(){
         if(color == "#d15188"){
@@ -37,8 +39,8 @@ const UseStatehome = (props) => {
                 </div>
                 <div id="right-login">
                     <Card color="white">
-                        <InputField type="email" placeholder="Email address or phone number" />
-                        <InputField type="password" placeholder="Password" />
+                        <InputField type="email" placeholder="Email address or phone number" value={email} onChange={e => setEmail(e.target.value)}/>
+                        <InputField type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}/>
                         <Button title="Log In" color={color} width="100%" />
                         <a href="#">Forgotten password?</a>
                         <hr />
@@ -51,7 +53,14 @@ const UseStatehome = (props) => {
                 <Button title="Go to Instagram >" color="#d15188" width="10vw" onClick={() => setColor("#d15188")}/>
                 <Button title="Go to Twitter >" color="#5ba0d3" width="10vw" onClick={() => setColor("#5ba0d3")}/>
                 <Button title="Go to Tik Tok >" color="black" width="10vw" onClick={() => setColor("black")}/>  
-
+            </div>
+            <div className="email">
+                <span>Email: </span>
+                <span className="data" style={{color: color}}>{email}</span>
+            </div>
+            <div className="password">
+                <span>{socialMedia} doesn't know your password is: </span>
+                <span className="data" style={{color: color}}>{password}</span>
             </div>
         </div>
     )
